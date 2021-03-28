@@ -1,0 +1,146 @@
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<title>My Page</title> 
+
+	<style> 
+		table { 
+			margin: 0 auto; 
+			font-size: large; 
+			border: 1px solid black; 
+		} 
+
+		h1 { 
+			text-align: center; 
+			color: #006600; 
+			font-size: xx-large; 
+			font-family: 'Gill Sans', 
+				'Gill Sans MT', ' Calibri', 
+				'Trebuchet MS', 'sans-serif'; 
+		} 
+
+		td { 
+			background-color: #E4F5D4; 
+			border: 1px solid black; 
+		} 
+
+		th, 
+		td { 
+			font-weight: bold; 
+			border: 1px solid black; 
+			padding: 10px; 
+			text-align: center; 
+		} 
+
+		td { 
+			font-weight: lighter; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<section> 
+		<h1> <button id = "btn" onclick = "loadData()"> Load Data </button> </h1> 
+
+		
+		<table id="table"> 
+			
+			
+			<tr> 
+				<th id = "First0">  </th> 
+				<th  id = "Middle0"> </th> 
+				<th id = "Last0"> </th>
+                <th id = "Email0"> </th>
+                <th id = "PhoneNo0"></th>
+                <th id = "Role0"></th>
+                <th id = "Address0"></th>
+                <th id = "0"> </th>
+				<!--<th>Phone No.</th>
+                <th>Role</th>
+                <th>Address</th>
+               <th> <button type="button"> Edit </button> 
+                   <button type="button"> Delete </button> 
+                </th> -->
+			</tr> 
+            <tr> 
+			
+                
+				<th id = "First1"> <p id = "First1X"> </p> <input type = "text" name = "First" id = "First1T" placeHolder = "Enter"> <button id = "First1B" onclick = "Edit2('First1')" >Submit </button></th> 
+				<th id = "Middle1"> <p id = "Middle1X"> </p> <input type = "text" name = "Middle" id = "Middle1T" placeHolder = "Enter"> <button id = "Middle1B" onclick = "Edit2('Middle1')"> Submit</button></th> 
+				<th id = "Last1"> <p id = "Last1X"> </p><input type = "text" name = "Last" id = "Last1T" placeHolder = "Enter"> <button id = "Last1B" onclick = "Edit2('Last1')"> Submit</button></th>
+                <th id = "Email1"> <p id = "Email1X"> </p><input type = "text" name = "Email" id = "Email1T" placeHolder = "Enter"> <button id = "Email1B" onclick = "Edit2('Email1')"> Submit</button></th>
+                <th id = "PhoneNo1"><p id = "PhoneNo1X"> </p><input type = "text" name = "Phone" id = "PhoneNo1T" placeHolder = "Enter"> <button id = "PhoneNo1B" onclick = "Edit2('PhoneNo1')"> Submit</button></th>
+                <th id = "Role1"> <p id = "Role1X"> </p><input type = "text" name = "Role" id = "Role1T" placeHolder = "Enter"> <button id = "Role1B" onclick = "Edit2('Role1')"> Submit</button></th>
+                <th id = "Address1"> <p id = "Address1X"> </p><input type = "text" name = "Address" id = "Address1T" placeHolder = "Enter"> <button id = "Address1B" onclick = "Edit2('Address1')"> Submit</button></th>
+            
+                <th > <button id = "1B" onclick = "Edit('1B')"></button>
+					
+                <button id = "1BB" onclick = "Delete('1BB')" > 
+				
+				</button> <button id = "1BBB" onclick = "save('1')"> Save </button> 
+                    <button id = "1BBBB" onclick = "cancel('1')"> Cancel  </button> 
+                </th>
+				
+				
+			</tr> 
+            <tr> 
+				
+				<th id = "First2"> <p id = "First2X"> </p><input id = "First2T" placeHolder = "Enter"> <button id = "First2B" onclick = "Edit2('First2')" >Submit </button> </th> 
+				<th id = "Middle2"> <p id = "Middle2X"> </p><input id = "Middle2T" placeHolder = "Enter"> <button id = "Middle2B" onclick = "Edit2('Middle2')">Submit </button></th> 
+				<th id = "Last2"> <p id = "Last2X"> </p><input id = "Last2T" placeHolder = "Enter"> <button id = "Last2B" onclick = "Edit2('Last2')">Submit </button></th>
+                <th id = "Email2"> <p id = "Email2X"> </p><input id = "Email2T" placeHolder = "Enter"> <button id = "Email2B" onclick = "Edit2('Email2')">Submit </button></th>
+                <th id = "PhoneNo2"><p id = "PhoneNo2X"> </p><input id = "PhoneNo2T" placeHolder = "Enter"> <button id = "PhoneNo2B" onclick = "Edit2('PhoneNo2')"> Submit</button></th>
+                <th id = "Role2"> <p id = "Role2X"> </p><input id = "Role2T" placeHolder = "Enter"> <button id = "Role2B" onclick = "Edit2('Role2')"> Submit</button></th>
+                <th id = "Address2"> <p id = "Address2X"> </p><input id = "Address2T" placeHolder = "Enter"> <button id = "Address2B" onclick = "Edit2('Address2')"> Submit</button></th>
+
+				<th id = "2"> <button id = "2B" onclick = "Edit('2B')">  </button>
+					
+                    <button id = "2BB" onclick = "Delete('2BB')" > 
+				
+                    </button>
+			
+                <button id = "2BBB" onclick = "save('2')"> Save </button>
+                    <button id = "2BBBB" onclick = "cancel('2')"> Cancel </button>
+                </th>
+				<!--<th>Phone No.</th>
+                <th>Role</th>
+                <th>Address</th>
+               <th> <button type="button"> Edit </button> 
+                   <button type="button"> Delete </button> 
+                </th> -->
+			</tr> 
+            <tr> 
+				
+				<th id = "First3"><p id = "First3X"> </p><input id = "First3T" placeHolder = "Enter"> <button id = "First3B" onclick = "Edit2('First3')"> Submit </button> </th> 
+				<th id = "Middle3"><p id = "Middle3X"> </p> <input id = "Middle3T" placeHolder = "Enter"> <button id = "Middle3B" onclick = "Edit2('Middle3')"> Submit</button> </th> 
+				<th id = "Last3"> <p id = "Last3X"> </p><input id = "Last3T" placeHolder = "Enter"> <button id = "Last3B" onclick = "Edit2('Last3')">Submit  </button></th>
+                <th id = "Email3"><p id = "Email3X"> </p> <input id = "Email3T" placeHolder = "Enter"> <button id = "Email3B" onclick = "Edit2('Email3')">Submit </button></th>
+                <th id = "PhoneNo3"><p id = "PhoneNo3X"> </p><input id = "PhoneNo3T" placeHolder = "Enter"> <button id = "PhoneNo3B" onclick = "Edit2('PhoneNo3')"> Submit</button></th>
+                <th id = "Role3"> <p id = "Role3X"> </p><input id = "Role3T" placeHolder = "Enter"> <button id = "Role3B" onclick = "Edit2('Role3')"> Submit</button></th>
+                <th id = "Address3"> <p id = "Address3X"> </p><input id = "Address3T" placeHolder = "Enter"> <button id = "Address3B" onclick = "Edit2('Address3')"> Submit</button></th>
+                
+				<th id = "3"> <button id = "3B" onclick = "Edit('3B')">  </button>
+				
+                <button id = "3BB" onclick = "Delete('3BB')">  </button> 
+				
+                <button id = "3BBB" onclick = "save('3')"> Save </button>
+                <button id = "3BBBB" onclick = "cancel('3')"> Cancel </button>
+                </th>
+				<!--<th>Phone No.</th>
+                <th>Role</th>
+                <th>Address</th>
+               <th> <button type="button"> Edit </button> 
+                   <button type="button"> Delete </button> 
+                </th> -->
+			</tr> 
+			
+            
+			
+	<section></section> 
+		
+    <script  src="http://127.0.0.1:8887/Project//Assignments-main//bundle.js"></script>
+<body></body> 
+
+<html></html> 
+    
